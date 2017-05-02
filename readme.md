@@ -50,6 +50,10 @@ Gillian bundles the following third-party resources:
 
 ## Changelog
 
+### 1.0.7
+
+* js/navigaton.js - Fix access to submenus on tablets
+
 ### 1.0.6
 
 * header.php & js/navigation.js - Further updates to aria-controls in top navigation toggle button
