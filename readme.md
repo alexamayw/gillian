@@ -2,7 +2,7 @@
 
 Contributors: Alexa Weidinger
 Tags: one-column, two-columns, three-columns, right-sidebar, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, sticky-post, threaded-comments, translation-ready, blog, education
-Tested up to: 4.7
+Tested up to: 4.8
 License: GPL 2.0
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -49,6 +49,10 @@ Gillian bundles the following third-party resources:
 * Droid Serif, https://www.google.com/fonts/specimen/Droid+Serif, [Apache License version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html)
 
 ## Changelog
+
+### 1.0.8
+
+* style.css - Fix padding issue with search bar in header across browsers
 
 ### 1.0.7
 

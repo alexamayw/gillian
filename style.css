@@ -4,7 +4,7 @@ Theme URI: http://alexaweidinger.com/gillian
 Author: Alexa Weidinger
 Author URI: http://alexaweidinger.com
 Description: Gillian is focused on organizing and presenting large amounts of content in a logical, useful, and visually appealing manner. Fully responsive and accessibility ready, Gillian is suitable for education institutions, blogging platforms, libraries, and more. Gillian ships with a header image ready for use, which you can keep, delete, or replace as you see fit. Some other features of Gillian include: three layout templates, optional locations for additional menus, an optional social media menu with Font Awesome icons integrated, widgetized areas (two sidebars and in the footer), and color customization options to make the theme uniquely yours.
-Version: 1.0.7
+Version: 1.0.8
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: gillian
@@ -516,6 +516,7 @@ textarea {
 	background-color: #f9f9f9;
 	color: #071f2e;
 	padding:  7px 10px;
+	-webkit-appearance: none;
 	border-radius: .3em;
 	max-width: 100%;
 }
@@ -821,9 +822,28 @@ textarea {
 	background-color: #263342;
 	margin-left: -3px;
 	padding-top: 6px;
-	padding-bottom: 6px;
+	padding-bottom: 7px;
 	border-top-left-radius: 0;
 	border-bottom-left-radius: 0;
+}
+
+@-moz-document url-prefix() {
+    .header-search .search-submit {
+		padding-bottom: 6px;
+	}
+}
+
+@media only screen and (-webkit-device-pixel-ratio:1){
+    .header-search .search-submit {
+		padding-bottom: 6px;
+	}
+}
+
+@media only screen and (-webkit-device-pixel-ratio:1.5){
+    .header-search .search-submit {
+		padding-top: 5px;
+		padding-bottom: 7px;
+	}
 }
 
 .header-search .search-submit:hover, .header-search .search-submit:focus {
@@ -850,6 +870,12 @@ textarea {
 	.header-search .search-field {
 		margin-top: 0;
 		max-width: inherit;
+	}
+	
+	@-moz-document url-prefix() {
+		.header-search .search-submit {
+			padding-top: 5px;
+		}
 	}
 	
 }
