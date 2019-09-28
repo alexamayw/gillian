@@ -50,6 +50,10 @@ Gillian bundles the following third-party resources:
 
 ## Changelog
 
+### 1.0.91
+
+* header.php - Fix issue with optional menus where menu toggle button wasn't working when a user didn't have a Social menu defined.
+
 ### 1.0.9
 
 * footer.php - Add link to privacy policy page in footer, when a privacy policy page has been set
